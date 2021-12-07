@@ -1,0 +1,25 @@
+eureka:
+  client:
+    #是否将自己注册到Eureka Server,默认为true
+    register-with-eureka: true
+    #是否从eureka server获取注册信息
+    fetch-registry: true
+    #设置服务注册中心的URL，用于client和server端交流
+    service-url:
+      defaultZone: http://admin:123456@localhost:8000/eureka/
+
+server:
+  port: 8003
+  #port: 8006
+spring:
+  application:
+    name: user-provider
+  #zipkin
+  zipkin:
+    base-url: http://localhost:9411/
+  #采样比例1
+  sleuth:
+    sampler:
+      rate: 1
+
+
