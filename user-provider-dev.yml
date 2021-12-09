@@ -22,4 +22,7 @@ spring:
     sampler:
       rate: 1
 
+people: 
+  name: lls
+
 
